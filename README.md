@@ -2,9 +2,9 @@
 A fork of [zykgen](https://github.com/luc10/zykgen) with added featueres
 
 ## Install the utility
-You can install it on your system with the `go get` command
-```go
-go get github.com/vasll/zykgen/cmd/zykgen
+You can install it on your system with the `go install` command
+```cmd
+go install github.com/vasll/zykgen/cmd/zykgen@latest
 ```
 
 ## Usage

@@ -1,31 +1,39 @@
-# Zyxel VMG8823-B50B WPA Keygen
+# Zykgen
+A fork of [zykgen](https://github.com/luc10/zykgen) with added featueres
 
-https://medium.com/@lucio.corsa/reversing-zyxel-vmg8823-b50b-wpa-algorithm-generation-for-fun-e926e45bf8f3
-
-## How to
-
-Just get it!
-
-```
-go get github.com/luc10/zykgen/cmd/zykgen
+## Install the utility
+You can install it on your system with the `go get` command
+```go
+go get github.com/vasll/zykgen/cmd/zykgen
 ```
 
 ## Usage
-
 ```
-zykgen (-m|-n|-c) [-l <length>] serial
+zykgen --pass (-m|-n|-c) [-o <file>] [-l <length>] <serial>
+zykgen --dump (-m|-n|-c) -o <file> [-l <length>] <RouterSerialRange>
+```
+- `--pass or --dump` The zykgen mode you want to use
+- `(-m|-n|-c)` What letterlist you want to use for the key generation
+- `[-o <file>]` Optional for the `--pass` mode but mandatory for the `--dump` mode
+- `-l <length>` The length of the password to generate, by default 10. _For example the home&life routers use 16 chars._
+- `<serial>` The serial of the router
+- `<RouterSerialRange>` One of the three router serial ranges included i.e: `homelife`, `infostrada`, `tiscali`
+
+
+## Examples
+### zykgen --pass
+`--pass` generates a password starting from a router's serial
+```powershell
+zykgen --pass -c -l 16 S182V30001171
+```
+Output
+```
+Serial: S182V30001171     
+Password: M8TN4BPPLLT4NJ84
 ```
 
-### Example
-
+### zykgen --dump
+`--dump` creates a file containing all the passwords between a serial router range, for example it can generate password from the home&life serial ranges which are `S182V00000000-S182V99999999` and `S192V00000000-S192V99999999`
+```powershell
+zykgen --dump -c -o test.txt -l 16 -t 4 homelife
 ```
-zykgen -c S000Y00000000
-```
-
-## Author
-
-**Luciano Corsalini**
-
-## License
-
-This project is licensed under the MIT License.

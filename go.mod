@@ -1,4 +1,4 @@
-module zykgen
+module github.com/vasll/zykgen
 
 go 1.20
 

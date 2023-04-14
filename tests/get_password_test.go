@@ -1,7 +1,7 @@
 package zykgen
 
 import (
-	"zykgen"
+	"github.com/vasll/zykgen"
 	"testing"
 )
 

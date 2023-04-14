@@ -14,7 +14,8 @@ func transform(c int32, a int32, b int32) byte {
 	return byte(c)
 }
 
-func Wpa(serial string, length int, cocktail Cocktail) (key string) {
+// Returns a password based on a router serial, password length and letterlist (Cocktail)
+func GetPassword(serial string, length int, cocktail Cocktail) (key string) {
 	var (
 		buf []byte
 		c   int

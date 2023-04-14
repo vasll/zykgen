@@ -1,0 +1,4 @@
+github.com/docopt/docopt.go v0.0.0-20180111231733-ee0de3bc6815 h1:HMAfwOa33y82IaQEKQDfUCiwNlxtM1iw7HLM9ru0RNc=
+github.com/docopt/docopt.go v0.0.0-20180111231733-ee0de3bc6815/go.mod h1:l7JNRynTRuqe45tpIyItHNqZWTxywYjp87MWTOnU5cg=
+github.com/luc10/zykgen v0.0.0-20180505203703-020efa7c1b4d h1:xrexjs/OqSRO6YkhzgwE+9JdhRgWCAO5AM9J259fN1M=
+github.com/luc10/zykgen v0.0.0-20180505203703-020efa7c1b4d/go.mod h1:pIKbuhcO43cuaICpDPxm6iQs0nMQww8+fq9Ff2knwu8=

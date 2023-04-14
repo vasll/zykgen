@@ -35,5 +35,5 @@ Password: M8TN4BPPLLT4NJ84
 ### zykgen --dump
 `--dump` creates a file containing all the passwords between a serial router range, for example it can generate password from the home&life serial ranges which are `S182V00000000-S182V99999999` and `S192V00000000-S192V99999999`
 ```powershell
-zykgen --dump -c -o test.txt -l 16 -t 4 homelife
+zykgen --dump -c -o test.txt -l 16 homelife
 ```

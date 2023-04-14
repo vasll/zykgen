@@ -54,9 +54,3 @@ func Wpa(serial string, length int, cocktail Cocktail) (key string) {
 
 	return
 }
-
-
-func WpaRange(serial string, length int, cocktail Cocktail) (key string) {
-	// TODO implement
-	return
-}
